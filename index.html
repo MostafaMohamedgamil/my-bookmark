@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKMARKS</title>
+    <link rel="icon" href="logo10.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="head py-4">
+            <h1>Bookmarker</h1>
+        </div>
+        <div class="input mt-5">
+
+            <div class="section mt-5 p-3 py-4 mb-4">
+                <h2 class="text-center">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-link pe-2"></i>
+                </h2>
+
+                <label class="pb-2" for="name">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    Site Name</label>
+                <input id="name" type="text" class="form-control mb-4" placeholder="Bookmarker Name">
+
+
+                <label class="pb-2" for="">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL</label>
+                <input id="url" type="email" class="form-control mb-4" placeholder="Website URL">
+
+                <center class="zorar">
+                    <button id="submit" onclick="addBookMaker()"  class="btn btn-danger m-auto">Submit</button>
+                    <button id="update"   class="btn btn-danger m-auto d-none" onclick="update()">Update</button>
+
+                </center>
+            </div>
+        </div>
+
+
+
+        <div class="output">
+
+
+            <input onkeyup="searchBookMaker(this.value)" id="search" type="search" class="form-control mt-4"
+                placeholder="Search...">
+            <table class="table mt-4 text-center">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                  
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
